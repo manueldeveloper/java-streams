@@ -15,7 +15,7 @@ import static org.junit.Assert.assertEquals;
 
 public class FileStreamTest {
 
-    private static String fileName = "src/test/resources/test.txt";
+    private static final String FILE_PATH = "src/test/resources/test.txt";
 
     @Test
     public void stream_to_file() throws IOException {
@@ -28,7 +28,7 @@ public class FileStreamTest {
         };
 
         // When
-        PrintWriter writer = new PrintWriter(Files.newBufferedWriter(Paths.get(fileName)));
+        PrintWriter writer = new PrintWriter(Files.newBufferedWriter(Paths.get(FILE_PATH)));
         Stream.of(words)
                 .peek(System.out::println)
                 .forEach(writer::println);
@@ -41,7 +41,7 @@ public class FileStreamTest {
         final List<String> expected = Arrays.asList("refer", "level");
 
         // When
-        final List<String> result = getPalindrome(Files.lines(Paths.get(fileName)), 5);
+        final List<String> result = getPalindrome(Files.lines(Paths.get(FILE_PATH)), 5);
 
         // Then
         assertEquals(expected, result);
