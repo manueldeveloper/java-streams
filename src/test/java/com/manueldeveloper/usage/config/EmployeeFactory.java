@@ -1,7 +1,7 @@
-package com.manueldeveloper.config;
+package com.manueldeveloper.usage.config;
 
-import com.manueldeveloper.Employee;
-import com.manueldeveloper.EmployeeRepository;
+import com.manueldeveloper.usage.Employee;
+import com.manueldeveloper.usage.EmployeeRepository;
 
 import javax.validation.constraints.NotNull;
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package com.manueldeveloper;
+package com.manueldeveloper.usage;
 
 import org.junit.Test;
 

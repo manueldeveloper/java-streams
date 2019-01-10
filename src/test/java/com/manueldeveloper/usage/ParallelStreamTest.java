@@ -1,6 +1,6 @@
-package com.manueldeveloper;
+package com.manueldeveloper.usage;
 
-import com.manueldeveloper.config.EmployeeFactory;
+import com.manueldeveloper.usage.config.EmployeeFactory;
 import org.junit.Test;
 
 import java.util.List;

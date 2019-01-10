@@ -1,4 +1,4 @@
-package com.manueldeveloper;
+package com.manueldeveloper.usage;
 
 public class Employee {
 
